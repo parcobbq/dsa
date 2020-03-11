@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+*{
+	color: #003366;
+	font-family: 'Titillium Web', sans-serif;
+
+}
 
 .logo{
 	float:center-left;
@@ -42,6 +48,7 @@ header nav{
   margin-top:10px;
   margin-right:55px;
   font-size:25px;
+
 }
 
 nav a{
@@ -120,7 +127,7 @@ header .current a{
 
 #middlesection p{
   font-size:18px;
-  font-family: serif;
+  
 
 }
 
@@ -339,6 +346,6 @@ footer{
   background-color:#d4d4d4;
   text-align: center;
   font-size:12px;
-  font-family:Trebuchet MS;
+  
   
 }

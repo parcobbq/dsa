@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-123456
+
 <header>
 	  <div class="container">
 		<div id="top">
@@ -49,19 +49,17 @@ if ($_GET){
         foreach ($photos as $photo){
 	
 	        $url2 = 'https://farm'.$photo->farm.'.staticflickr.com/'.$photo->server.'/'.$photo->id.'_'.$photo->secret.'.jpg';
-	        echo '<img src="'.$url2.'">';
+	        echo '<div style="margin:3%; display: inline-block"><img style="box-shadow: 10px 10px 5px grey" src="'.$url2.'"></div>';
         }
     }else{
         echo '<h1>City does not exist!!!</h1>';
     }
 }
 else{
-    echo '<div style="font-size: 36px"><a  href="gallery.php?city=Newcastle">Newcastle</a></div>';
-    echo '<br></br>';
-    echo '<div style="font-size: 36px"><a  href="gallery.php?city=Atlanta">Atlanta</a></div>';
+    echo '<div style="font-size: 36px; display: inline-block; width: 30vw; text-align: center; margin-top: 10%"><a href="gallery.php?city=Newcastle"><img width="500" src="newcastle1.jpg"><br><span>Newcastle</span></a></div>';
+    
+    echo '<div style="font-size: 36px; display: inline-block; width: 30vw; text-align: center; margin-top: 10%"><a href="gallery.php?city=Atlanta"><img width="500" src="atlanta1.jpg"><br><span>Atlanta</span></a></div>';
 }
-
-
 
 ?>
 <p></p>
